@@ -41,8 +41,7 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1>Web Dev Workshop: HTML &amp; CSS Introduction</h1>
-          <h3>Part 0</h3>
+          <h1>Web Dev Workshop: HTML5 Features</h1>
           <p>
             <small>By Arjun, Pragmatic Programming Chair</small>
           </p>
@@ -52,24 +51,12 @@
         <section>
           <h4><em>Goals of this workshop</em></h4>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
+            <li>Understanding the features of HTML5</li>
           </ul>
         </section>
-
-        <section>
-          <h2>HTML: Hypertext Markup Language</h2>
-          <pre><code data-trim>
-<meta charset="utf-8">
-<title>Page Title</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-          </code></pre>
-       </section>
-       
        
        <section>
-         <h2>General Structure</h2>
+         <h2>Reviewing</h2>
          <pre><code data-trim>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -84,135 +71,66 @@
        </section>
        
         <section>
-          <h2>Head Tag</h2>
-          <pre><code data-trim>
-&lt;head&gt;
-   &lt;meta charset=&quot;utf-8&quot;&gt;
-   &lt;title&gt;Page Title&lt;/title&gt;
-   &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-   &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-         </code></pre>
+          <h2>HTML5 vs HTML4</h2>
+          <img src="images/html5_info.png">
         </section>
 
         <!-- Example of nested vertical slides -->
         <section>
-          <h2>Commonly used Tags</h2>
+          <h2>New Structural Tags</h2>
+          <ul>
+            <li>&lt;header&gt;</li>
+            <li>&lt;footer&gt;</li>
+            <li>&lt;nav&gt;</li>
+            <li>&lt;article&gt;</li>
+            <li>&lt;section&gt;</li>
+            <li>&lt;time&gt;</li>
+            <li>&lt;aside&gt;</li>
+            <li>&lt;figure&gt;, &lt;figcaption&gt;</li>
+            <li>&lt;main&gt;</li>
+          </ul>
         </section>
         
         
         <section>
-          <h2>Header Tags</h2>
-        <pre><code data-trim>
-&lt;h1&gt;Biggest Title&lt;/h1&gt;
-&lt;h2&gt;Bigger Title&lt;/h2&gt;
-&lt;h3&gt;Big Title&lt;/h3&gt;
-...
-&lt;h6&gt;Smallest Title&lt;/h6&gt;
-       </code></pre>
+          <h2>Example...</h2>
         </section>
         
         <section>
-          <h2>Paragraph Tag</h2>
-        <pre><code data-trim>
-&lt;p&gt;This is a paragraph. Bla Bla Bla...&lt;/p&gt;
-       </code></pre>
+          <h2>Microdata</h2>
+          <img src="images/microdata.png">
         </section>
 
         <section>
-          <h2>List Tags</h2>
-        <pre><code data-trim>
-&lt;ul&gt;
-  &lt;li&gt;Coffee&lt;/li&gt;
-  &lt;li&gt;Tea&lt;/li&gt;
-  &lt;li&gt;Milk&lt;/li&gt;
-&lt;/ul&gt;
-       </code></pre>
+          <h2>Canvas</h2>
+          <ul>
+            <li>A place where you can draw stuff with HTML &amp; JS</li>
+            <li>Primarily JS</li>
+            <li>Example...</li>
+          </ul>
         </section>
         
         <section>
-          <h2>List Tags(Cntd...)</h2>
-        <pre><code data-trim>
-&lt;ol type=&quot;1&quot;&gt;
-  &lt;li&gt;Coffee&lt;/li&gt;
-  &lt;li&gt;Tea&lt;/li&gt;
-  &lt;li&gt;Milk&lt;/li&gt;
-&lt;/ol&gt;
-       </code></pre>
+          <h2>The Web Storage API</h2>
+          <ul>
+            <li><code>localStorage</code></li>
+            <li><code>sessionStorage</code></li>
+            <li>Example...</li>
+          </ul>
         </section>
         
         <section>
-          <h2>Anchor Tags</h2>
-        <pre><code data-trim>
-&lt;nav&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;h.html&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;c.html&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;j.html&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;q.html&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-       </code></pre>
-        </section>
-
-        <section>
-          <h2>Now for the exercise....</h2>
+          <h2>HTML5 Cache</h2>
+        <ul>
+          <li><code>CACHE</code></li>
+          <li><code>NETWORK</code></li>
+          <li><code>FALLBACK</code></li>
+        </ul>
         </section>
         
-        <section>
-          <h2>CSS</h2>
-        </section>
-        
-        <section>
-          <h2>Linking Stylesheet</h2>
-        <pre><code data-trim>
-   &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-       </code></pre>
-        </section>
-        
-       <section>
-         <h2>Then, in the stylesheet....</h2>
-       <pre><code data-trim>
-body {
-  background-image: url('...');
-}
-h1,h2,h3,h4,h5,h6 {
-  font-size: 20px;
-}
-      </code></pre>
-       </section>
        
-       <section>
-      <section>
-        <h2>Two ways to custom style elements</h2>
-        <h6>By ID's</h6>
-      <pre><code data-trim>
- &lt;p id=&quot;sample_paragraph&quot;&gt;This is a sample paragraph&lt;/p&gt;
-   </code></pre>
-   
- <pre><code data-trim>
- /* Then in the CSS */
- #sample_paragraph {
-   color: red;
- }
-  </code></pre>   
-      </section>
+        
       
-           <section>
-             <h2>By Classes</h2>
-           <pre><code data-trim>
-&lt;ul class=&quot;squareList&quot;&gt;
-  &lt;li&gt;Bla1&lt;/li&gt; 
-  &lt;li&gt;Bla2&lt;/li&gt;
-&lt;/ul&gt;
-        </code></pre>
-      <pre><code data-trim>
-/* Then in the CSS */
-.squareList {
-  list-style-type: square;
-}
-       </code></pre>   
-           </section>
       </section>
       
       
